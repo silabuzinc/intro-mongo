@@ -87,10 +87,22 @@ db.<collection_name>.help()
 
 ## Query and Projection Operators
 
-1. $eq: Matches values that are equal to a specified value.
-2. $gt: Matches values that are greater than a specified value.
-3. $gte: Matches values that are greater than or equal to a specified value.
-4. $in: Matches any of the values specified in an array.
-5. $lt: Matches values that are less than a specified value.
-6. $lte: Matches values that are less than or equal to a specified value.
-7. $ne: Matches all values that are not equal to a specified value.
+```bash
+$eq         =
+$gt         >
+$gte        >=
+$lt         <
+$lte        <=
+$ne         !=
+$in         valores dentro de un rango
+$nin        valores que no estan dentro de un rango
+$and        Une queries con un AND logico
+$not        Invierte el efecto de un query
+$nor        Une queries con un NOR logico
+$or         Une queries con un OR logico
+$exist      Docuemntos que cuentan con un campo especifico
+$type       Docuemntos que cuentan con un campo de un tipo especifico
+$all        Arreglos que contengan todos los elementos del query
+$elemMatch  Documentos que cumplen la condicion del $elemMatch en uno de sus elementos
+$size       Documentos que contienen un campo tipo arreglo de un tamaño especifico.
+```
